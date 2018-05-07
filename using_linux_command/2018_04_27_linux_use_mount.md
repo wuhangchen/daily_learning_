@@ -37,4 +37,17 @@ simply run the following command from the terminal either "root" or "sudo "to un
 - -t:this argument is used to indicate the given filesystem type.
 - -iso9660 :it describes standard and default filesystem structure to be used on cd/dvd roms;
 - -o  :options are necessary with a followed by a sseparated comma string of  options.
-- -loop :the loop device is a pseudo-device that often used for mounting cd/cdvd iso image and makes those files accessible as a block device.
+- -loop :the loop device is a pseudo-device that often used for mounting cd/cdvd iso image and makes those files accessible as a block device.  
+
+
+
+
+
+#### other choice 
+we can using the mount directly to mount the filesystem where destination .
+
+
+```shell 
+    mount /dev/cdrom   /mnt/iso
+```
+by default ,we know that mounted fileststem it mount the /dev/cdrom .
